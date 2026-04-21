@@ -76,7 +76,7 @@ bash
 git clone https://github.com/bryanQdev/react.git
 cd react
 
----
+
 
 Instalar dependencias:
 
@@ -84,7 +84,7 @@ npm install
 ▶️ Ejecución en desarrollo
 npm run dev
 
----
+
 
 🧪 Calidad del código
 
@@ -103,7 +103,7 @@ Evitación de any
 Uso de keyof, Partial<T>, generic types
 Validación en tiempo de compilación
 
----
+
 🧠 Conceptos aplicados
 
 Este proyecto demuestra conocimientos en:
@@ -115,7 +115,7 @@ Inferencia de tipos
 Tipado de componentes React
 Arquitectura frontend escalable
 Integración de librerías externas tipadas
----
+
 📌 Objetivo académico
 
 Este proyecto forma parte de la Práctica 4 de TypeScript + React, cuyo objetivo es consolidar:
