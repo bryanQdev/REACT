@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 React + TypeScript Advanced Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación frontend desarrollada con **React + TypeScript + Vite**, enfocada en la creación de componentes genéricos, tipado estricto y arquitectura escalable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El objetivo principal es demostrar el uso avanzado de TypeScript en React mediante:
+- Componentes reutilizables
+- Genéricos
+- Tipos de utilidad
+- Manejo seguro de estados
+- Integración de librerías externas con tipado
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Funcionalidades principales
 
-## Expanding the ESLint configuration
+### 📊 DataTable genérico
+Se ha implementado un componente `DataTable<T>` completamente reutilizable que permite renderizar cualquier tipo de datos de forma tipada.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Características:
+- Tipado genérico (`<T>`)
+- Columnas dinámicas basadas en `keyof T`
+- Soporte para edición de filas
+- Validación estricta en tiempo de compilación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### ✏️ Sistema de edición de datos
+- Uso de `Partial<T>` para edición progresiva
+- Estado seguro sin necesidad de objetos completos
+- Validación de cambios en tiempo real
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📅 Utilidades de fechas
+- Uso de `date-fns` para manipulación de fechas
+- Funciones tipadas para formateo y cálculos
+- Validación estricta de tipos (`Date`)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🧱 Arquitectura del proyecto
+
+Estructura del proyecto:
