@@ -43,3 +43,34 @@ Características:
 ### 🧱 Arquitectura del proyecto
 
 Estructura del proyecto:
+src/
+├── components/ # Componentes reutilizables (DataTable, etc.)
+├── pages/ # Páginas principales
+├── hooks/ # Custom hooks
+├── api/ # Cliente de API
+├── types/ # Tipos globales TypeScript
+├── utils/ # Funciones auxiliares
+├── context/ # Estado global (Context API)
+
+
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+- React 18
+- TypeScript (strict mode)
+- Vite
+- React Router DOM
+- date-fns
+- Tailwind CSS
+
+---
+
+## 🚀 Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/bryanQdev/react.git
+cd react
