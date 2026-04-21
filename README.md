@@ -84,43 +84,47 @@ npm install
 ▶️ Ejecución en desarrollo
 npm run dev
 
-
-
-🧪 Calidad del código
+---
+## 🧪 Calidad del código
 
 El proyecto utiliza TypeScript en modo estricto:
 
+```json
 {
   "compilerOptions": {
     "strict": true
   }
 }
+```
 
-Además, se aplica:
+Además, se aplican buenas prácticas como:
 
-Tipado fuerte en props
-Evitación de any
-Uso de keyof, Partial<T>, generic types
-Validación en tiempo de compilación
+- Tipado fuerte en props
+- Evitación de `any`
+- Uso de `keyof`, `Partial<T>`, tipos genéricos
+- Validación en tiempo de compilación
 
+---
 
-🧠 Conceptos aplicados
+## 🧠 Conceptos aplicados
 
 Este proyecto demuestra conocimientos en:
 
-Programación genérica (<T>)
-Uniones de tipos
-Tipos de utilidad (Partial, Readonly)
-Inferencia de tipos
-Tipado de componentes React
-Arquitectura frontend escalable
-Integración de librerías externas tipadas
+- Programación genérica (`<T>`)
+- Uniones de tipos
+- Tipos de utilidad (`Partial`, `Readonly`)
+- Inferencia de tipos
+- Tipado de componentes en React
+- Arquitectura frontend escalable
+- Integración de librerías tipadas
 
-📌 Objetivo académico
+---
 
-Este proyecto forma parte de la Práctica 4 de TypeScript + React, cuyo objetivo es consolidar:
+## 📌 Objetivo académico
 
-Tipado estricto en aplicaciones reales
-Componentización avanzada
-Buenas prácticas de arquitectura frontend
-Uso profesional de TypeScript en React
+Este proyecto forma parte de la **Práctica 4 de TypeScript + React**, cuyo objetivo es consolidar:
+
+- Tipado estricto en aplicaciones reales  
+- Componentización avanzada  
+- Buenas prácticas de arquitectura frontend  
+- Uso profesional de TypeScript en React
